@@ -7,38 +7,20 @@ Performs an action for each object at the specified point in the drawing. This c
 
 If the callback function returns FALSE, ForEachObjectAtPoint will not process any more objects at the specified point.
 
-{| class="wikitable"
-|+ Table - ForEachObjectAtPoint Selectors
-! Option !! Selector !! Description
-|-
-! Colspan="3" | Object Options
-|-
-| All objects
-| style="text-align:center"| 0
-| 
-|-
-| Visible Objects only
-| style="text-align:center"| 1
-|  
-|-
-| Selected Objects only
-| style="text-align:center"| 2
-| 
-|-
-| Unlocked objects only
-| style="text-align:center"| 4
-| 
-|-
-! Colspan="3" | Traversal Options
-|-
-| Traverse Shallow
-| style="text-align:center"| 0
-|  
-|-
-| Traverse Groups
-| style="text-align:center"| 1
-| Traverse inside groups
-|}
+## Object Options
+|Option|Selector|Description|
+|--|--|--|
+|All objects|0|
+|Visible Objects only|1|
+|Selected Objects only|2|
+|Unlocked objects only|4|
+
+## Traversal Options
+|Option|Selector|Description|
+|--|--|--|
+|Traverse Shallow|0|
+|Traverse Groups|1|
+|Traverse inside groups|2|
 
 ```pascal
 PROCEDURE ForEachObjectAtPoint(
